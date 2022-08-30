@@ -1,0 +1,15 @@
+.App * {
+  margin: 0;
+  padding: 0;
+}
+.App :global .ant-layout-sider {
+  height: 809px !important;
+}
+.App :global .ant-layout-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.App :global .ant-layout-content {
+  height: 100%;
+}
