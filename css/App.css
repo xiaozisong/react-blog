@@ -6,9 +6,13 @@
   height: 809px !important;
 }
 .App :global .ant-layout-header {
+  width: 100%;
+  position: fixed;
   background-color: #fff;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #e4e2e2;
+  z-index: 999;
 }
 .App :global .ant-layout-content {
   height: 100%;

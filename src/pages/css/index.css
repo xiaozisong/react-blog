@@ -1,23 +1,13 @@
-.HomeMain {
+.Home {
+  padding-top: 40px;
+  padding-left: 25px;
+}
+.Home :global .ant-menu {
+  margin-top: 30px;
+}
+.Home :global .ant-menu .ant-menu-item {
   background-color: #fff;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-  margin-top: 50px;
 }
-.HomeMain .pic {
-  height: 440px;
-  background-image: url(../../assets/WechatIMG8.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.HomeMain .title {
-  text-align: center;
-  margin-top: 20px;
-}
-.HomeMain .subTitle {
-  font-size: 1.6rem;
-  color: #6a8bad;
-  text-align: center;
+.Home :global .ant-menu .ant-menu-sub {
+  background-color: #fff;
 }

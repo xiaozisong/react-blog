@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './index.less'
 import { Button } from 'antd'
+import { Link } from 'react-router-dom'
 export default function HomeMain() {
   return (
     <div className={styles.HomeMain}>
@@ -14,7 +15,9 @@ export default function HomeMain() {
           肖子凇的个人博客
         </p>
         <Button type='primary' size='large' style={{marginTop: 20}}> 
-          进入主页
+          <Link to={'/home'}>
+            进入主页
+          </Link>
         </Button>
       </div>
     </div>

@@ -1,20 +1,20 @@
 import { Layout } from 'antd';
-import styles from './App.less'
 import React from 'react';
-import TopBar from './pages/topbar';
-import NavBar from './pages/navbar';
+import { Route, Routes } from 'react-router-dom'
+import AppLayout from './layouts/AppLayout';
+import Home from './pages/home';
 import HomeMain from './pages/homemain';
 function App() {
-  const { Header, Footer, Content } = Layout;
+  const { Header } = Layout;
   return (
-    <div className={styles.App}>
-        <Header>
-          <TopBar/>
-          <NavBar />
-        </Header>
-        <HomeMain />
-    </div>
-
+    <>
+      <Routes>
+        <Route path='/' element={<AppLayout />} >
+          <Route index element={<HomeMain />}></Route>
+          <Route path='home' element={<Home />}></Route>
+        </Route>
+      </Routes>
+    </>
   );
 }
 
