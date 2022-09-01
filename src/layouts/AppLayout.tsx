@@ -1,6 +1,5 @@
 import { Header } from 'antd/lib/layout/layout'
 import React from 'react'
-import HomeMain from '../pages/homemain'
 import NavBar from '../pages/navbar'
 import TopBar from '../pages/topbar'
 import styles from '../App.less'
